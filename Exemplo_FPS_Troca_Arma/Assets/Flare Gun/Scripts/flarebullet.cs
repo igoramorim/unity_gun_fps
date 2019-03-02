@@ -6,7 +6,7 @@ public class flarebullet : MonoBehaviour {
 
 	private Light flarelight;
 	private AudioSource flaresound;
-	private ParticleRenderer smokepParSystem;
+	// private ParticleRenderer smokepParSystem;
 	private bool myCoroutine;
 	private float smooth = 2.4f;
 	public 	float flareTimer = 9;
@@ -21,7 +21,7 @@ public class flarebullet : MonoBehaviour {
 		GetComponent<AudioSource>().PlayOneShot(flareBurningSound);
 		flarelight = GetComponent<Light>();
 		flaresound = GetComponent<AudioSource>();
-		smokepParSystem = GetComponent<ParticleRenderer>();
+		// smokepParSystem = GetComponent<ParticleRenderer>();
 
 		
 		Destroy(gameObject,flareTimer + 1f);
